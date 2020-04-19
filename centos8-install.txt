@@ -1,0 +1,16 @@
+Reference : https://linuxconfig.org/how-to-install-ffmpeg-on-redhat-8
+dnf groupinstall "Development Tools"
+git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg
+dnf install libxcb-devel (used for x11grab)
+
+#make
+cd ffmpeg
+./configure
+
+You can bypass the optional nasm dependency with
+
+ ./configure --disable-x86asm
+make
+sudo make install
+
+# ffmpeg is install at : /usr/local/bin/ffmpeg
