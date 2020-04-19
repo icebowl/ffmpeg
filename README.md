@@ -1,1 +1,4 @@
 # ffmpeg
+Linux
+
+Windows
