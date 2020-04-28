@@ -2,6 +2,7 @@ Reference : https://linuxconfig.org/how-to-install-ffmpeg-on-redhat-8
 dnf groupinstall "Development Tools"
 git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg
 dnf install libxcb-devel (used for x11grab)
+dnf install alsa-lib-devel
 
 #make
 cd ffmpeg
